@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/FormStyle.css">
+        <script src="javascript/formscript.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <img src="Images/DarkLogo.png" width="58px">
+            <a href="AboutPage.html">About</a>
+            <a href="#">Store</a>
+            <a href="#">Home</a>
+        </nav>
+        <h2>Application Form</h2>
+            <body>
+                <section class="applicationForm">
+                    <form name="jobApplicationForm" onsubmit="return validateForm()">
+                    <fieldset><legend>Contact Details</legend>
+                      <div class="row">
+                            <div class="col-25">
+                                <label>First name:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="firstname" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>Last name:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="lastname" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>Email:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>Phone Number:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="tel" placeholder="01234501234" pattern="[0-9]{11}" required name="telephone">
+                            </div>
+                        </div>
+        
+                    </fieldset>
+                    <fieldset><legend>Job Details</legend>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>Job Type:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="radio" name="jobType" value="SecureApplicationWebDeveloper">Secure Application Web Developer<br>
+                                <input type="radio" name="jobType" value="CyberSecurity">Cyber Security<br>
+                                <input type="radio" name="jobType" value="WebsiteDevelopment">Website Development<br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>Current Employment:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="radio" name="employmentType" value="Student">Student<br>
+                                <input type="radio" name="employmentType" value="Unemployed">Unemployed<br>
+                                <input type="radio" name="employmentType" value="Self-Employed">Self-Employed<br>
+                                <input type="radio" name="employmentType" value="Employed">Employed<br>
+                            </div>
+                        </div>
+                </fieldset>
+                <input type="submit" value="Submit" name="submit">
+            </form>
+                </section>
+                <script src="formscript.js"></script>
+            </body>
+
+    <footer>
+        <h3>Information</h3>
+        <p>Email Address: <a href="company@gmail.com">company@gmail.com</a></p>
+        <p>Phone Number: +44 7849483330</p>
+    </footer>
+</html>

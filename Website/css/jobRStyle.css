@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  margin-top: 0;
+}
+
+input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (min-width: 600px) {
+  input[type=submit] {
+    width: 25%;
+    margin-top: 0;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+fieldset {
+	width: 80%;
+	margin: 20px 0;
+}
+
+.applicationForm {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+form {
+	font-size: 1.2em;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+
+	width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus {
+	background-color: lightblue;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+
+select {
+  width: 60%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+option {
+	padding: 2px 2px 2px 0;
+	font-size: 1.2em;
+}
+
+option:hover {
+	background-color: #45a049;
+}
+	

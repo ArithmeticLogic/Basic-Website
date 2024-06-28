@@ -1,0 +1,90 @@
+@media screen and (max-width: 800px) {
+    tr td {
+      display: block;
+    }
+
+    .rightSide {
+      margin-right: auto;
+      width: 75%;
+    }
+  }
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(186, 200, 211);
+    margin-top: auto;
+    font-size: 15px;
+    border-style: solid;
+    border-left-width: 20px;
+    border-color: rgb(186, 200, 211);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(218, 232, 252);
+}
+
+.navbar a {                         
+    float: right;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: rgb(186, 200, 211);
+  }
+
+  .active {
+    background-color:rgb(186, 200, 211); /* Which page is currently open */
+  }
+
+  table, tr, th {
+    /*border: 1px solid black;*/
+    border-collapse: collapse;
+    padding-inline: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .buttonsAboutPage {
+    font-size: 75%;
+    padding-inline: 10px;
+  }
+
+  .buttonsJobRecruitmentPage {
+    font-size: 20px;
+    margin-left: auto;
+    padding-right: auto;
+    padding-inline: auto;
+  }
+
+  .buttonsApplicationFormPage {
+    font-size: 20px;
+    padding-inline: 15px;
+  }
+
+  .rightSide {
+    margin-left: auto;
+    width: 75%;
+  }
+
+  .leftSide {
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
